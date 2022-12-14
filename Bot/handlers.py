@@ -1,5 +1,4 @@
 from aiogram import Bot, Dispatcher, executor, types
-from aiogram.contrib.middlewares.logging import LoggingMiddleware
 import asyncio
 import aioschedule
 import main_functions as mf
@@ -11,7 +10,6 @@ from dotenv import load_dotenv
 load_dotenv()
 bot = Bot(token=os.environ['TOKEN'])
 dp = Dispatcher(bot)
-dp.middleware.setup(LoggingMiddleware())
 
 
 async def on_startup(_):
