@@ -1,0 +1,6 @@
+/.env
+/venv/
+/.idea/
+/requirements.txt
+/Bot/screenshots/
+__pycache__/
